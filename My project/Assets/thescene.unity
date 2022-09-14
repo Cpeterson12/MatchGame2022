@@ -524,8 +524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4ae4d4b628ea44b2121985468700c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  label: {fileID: 0}
-  dataObj: {fileID: 11400000, guid: 2059f16419557004fbd52db8217f5758, type: 2}
 --- !u!222 &200049141
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -730,22 +728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32168b04d5202041b109aab282421bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 11400000, guid: 2059f16419557004fbd52db8217f5758, type: 2}, m_TargetAssemblyTypeName: FloatData, Assembly-CSharp, m_MethodName: UpdateValue, m_Mode: 4, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 5, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 1535464687}, m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine, m_MethodName: Emit, m_Mode: 3, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 10,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 200049140}, m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp, m_MethodName: UpdateLabel, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 1291348791}, m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine, m_MethodName: set_sprite, m_Mode: 2, m_Arguments: {m_ObjectArgument: {fileID: 3625043607559282579,
-            guid: b3d6c5a85f2092d4095f633e8df1dccc, type: 3}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine,
-          m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
 --- !u!1 &1387195840
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,19 +820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32168b04d5202041b109aab282421bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 11400000, guid: 2059f16419557004fbd52db8217f5758, type: 2}, m_TargetAssemblyTypeName: FloatData, Assembly-CSharp, m_MethodName: UpdateValue, m_Mode: 4, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: -10, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 1875441733}, m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine, m_MethodName: SetActive, m_Mode: 6, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 200049140}, m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp, m_MethodName: UpdateLabel, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
 --- !u!212 &1455934095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5949,6 +5918,7 @@ GameObject:
   - component: {fileID: 1875441735}
   - component: {fileID: 1875441734}
   - component: {fileID: 1875441739}
+  - component: {fileID: 1875441740}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -5965,15 +5935,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875441733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32168b04d5202041b109aab282421bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fdbcb604a97e8d4cb4a0bedb0b5be5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - {m_Target: {fileID: 11400000, guid: 14d5fec9e4ce8ad4b93a63f49a06996f, type: 2}, m_TargetAssemblyTypeName: IntData, Assembly-CSharp, m_MethodName: ChangeValue, m_Mode: 3, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 3,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
+      - {m_Target: {fileID: 0}, m_TargetAssemblyTypeName: , m_MethodName: , m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
+          m_ObjectArgumentAssemblyTypeName: , m_IntArgument: 0, m_FloatArgument: 0,
+          m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
     m_CallsDirty: 1
 --- !u!65 &1875441735
 BoxCollider:
@@ -6081,27 +6051,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1875441733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3623162541a1ee34896b282a0ececa12, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  awakeEvent:
+--- !u!114 &1875441740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875441733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41a54c9855d46341adc92983c2da452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invisibleEvent:
     m_PersistentCalls:
       m_Calls:
-      - {m_Target: {fileID: 11400000, guid: 2059f16419557004fbd52db8217f5758, type: 2}, m_TargetAssemblyTypeName: FloatData, Assembly-CSharp, m_MethodName: SetValue, m_Mode: 4, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 40, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
-  disableEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - {m_Target: {fileID: 11400000, guid: 2059f16419557004fbd52db8217f5758, type: 2}, m_TargetAssemblyTypeName: FloatData, Assembly-CSharp, m_MethodName: SetValue, m_Mode: 4, m_Arguments: {m_ObjectArgument: {fileID: 0},
+      - {m_Target: {fileID: 1455934092}, m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine, m_MethodName: set_isTrigger, m_Mode: 6, m_Arguments: {m_ObjectArgument: {fileID: 0},
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
           m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-      - {m_Target: {fileID: 200049140}, m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp, m_MethodName: UpdateLabel, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0,
-          m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
+      - {m_Target: {fileID: 0}, m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine, m_MethodName: , m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0},
+          m_ObjectArgumentAssemblyTypeName: , m_IntArgument: 0, m_FloatArgument: 0,
+          m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
     m_CallsDirty: 1
