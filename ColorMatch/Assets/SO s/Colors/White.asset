@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 973e64788bdd69a42ac1d7badeef11aa, type: 3}
-  m_Name: HighScore
+  m_Script: {fileID: 11500000, guid: 1df16a6d8e5333b46a0d6f40fb254529, type: 3}
+  m_Name: White
   m_EditorClassIdentifier: 
-  value: 70
+  value: {r: 0.93773586, g: 1, b: 0.9437989, a: 1}
