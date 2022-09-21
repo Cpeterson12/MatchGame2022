@@ -20,6 +20,7 @@ public class DragableBeaviour : MonoBehaviour
         yield return new WaitForFixedUpdate();
         draggable = true;
         startDragEvent.Invoke();
+        
         while (draggable)
         {
             yield return new WaitForFixedUpdate();
