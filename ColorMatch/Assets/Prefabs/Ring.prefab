@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4836269232150641854}
   - component: {fileID: 3218696617541479262}
   m_Layer: 7
-  m_Name: Circle
+  m_Name: HiddenDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,9 +112,9 @@ GameObject:
   - component: {fileID: -8540429911065811384}
   - component: {fileID: -4246018494008658687}
   - component: {fileID: 1270698154915602548}
-  - component: {fileID: -1828396478020419793}
-  - component: {fileID: 1641413268133630389}
   - component: {fileID: -7163262242720017970}
+  - component: {fileID: 1641413268133630389}
+  - component: {fileID: -1828396478020419793}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634f9316a1560304cbbc3b985e41416f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-1828396478020419793
+--- !u!114 &-7163262242720017970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,29 +253,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9152954391541224196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 630e435eb7e87ce49ab3e3dbac083009, type: 3}
+  m_Script: {fileID: 11500000, guid: 776c6009cfccf20428d276a3f92df438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idObj: {fileID: 0}
-  matchEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -1828396478020419793}
-        m_TargetAssemblyTypeName: ColorMatchBehaviour, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 4836269232150641854}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  noMatchEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  noMatchDelayedEvent:
+  startEvent:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 14c23d5687cabbb478c79a9c00229282, type: 2}
@@ -313,7 +295,7 @@ MonoBehaviour:
   disableEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-7163262242720017970
+--- !u!114 &-1828396478020419793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -322,11 +304,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 9152954391541224196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776c6009cfccf20428d276a3f92df438, type: 3}
+  m_Script: {fileID: 11500000, guid: 630e435eb7e87ce49ab3e3dbac083009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idObj: {fileID: 0}
   startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1828396478020419793}
+        m_TargetAssemblyTypeName: ColorMatchBehaviour, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4836269232150641854}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 14c23d5687cabbb478c79a9c00229282, type: 2}

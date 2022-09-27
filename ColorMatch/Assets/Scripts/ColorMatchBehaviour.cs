@@ -15,5 +15,6 @@ public class ColorMatchBehaviour : MatchBehaviour
     {
         var newColor = idObj as ColorID;
         renderer.color = newColor.value;
+        Debug.Log("Candice");
     }
 }
