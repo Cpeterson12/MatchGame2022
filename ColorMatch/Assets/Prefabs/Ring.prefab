@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 1599403787858129122}
   - component: {fileID: 4836269232150641854}
   - component: {fileID: 3218696617541479262}
+  - component: {fileID: 2784632637808384211}
+  - component: {fileID: 299712747065881573}
+  - component: {fileID: 324505856310810046}
   m_Layer: 7
   m_Name: HiddenDot
   m_TagString: Untagged
@@ -98,6 +101,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 634f9316a1560304cbbc3b985e41416f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2784632637808384211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7248705198183455473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630e435eb7e87ce49ab3e3dbac083009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1828396478020419793}
+        m_TargetAssemblyTypeName: ColorMatchBehaviour, Assembly-CSharp
+        m_MethodName: ChangeColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4836269232150641854}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9152954391541224196}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: BroadcastMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: I cry
+          m_BoolArgument: 0
+        m_CallState: 2
+  noMatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  noMatchDelayedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: 14c23d5687cabbb478c79a9c00229282, type: 2}
+--- !u!114 &299712747065881573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7248705198183455473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776c6009cfccf20428d276a3f92df438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  colorIDDataListObj: {fileID: 11400000, guid: 14c23d5687cabbb478c79a9c00229282, type: 2}
+--- !u!65 &324505856310810046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7248705198183455473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9152954391541224196
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,13 +191,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2204475974987319882}
   - component: {fileID: 8955677857749658545}
-  - component: {fileID: 6463093905189115407}
   - component: {fileID: -8540429911065811384}
   - component: {fileID: -4246018494008658687}
   - component: {fileID: 1270698154915602548}
   - component: {fileID: -7163262242720017970}
   - component: {fileID: 1641413268133630389}
   - component: {fileID: -1828396478020419793}
+  - component: {fileID: -6896348285243267785}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -190,19 +273,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &6463093905189115407
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9152954391541224196}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.88, y: 2.88, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-8540429911065811384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,19 +383,7 @@ MonoBehaviour:
       m_Calls: []
   matchEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -1828396478020419793}
-        m_TargetAssemblyTypeName: ColorMatchBehaviour, Assembly-CSharp
-        m_MethodName: ChangeColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 4836269232150641854}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -333,3 +391,31 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 14c23d5687cabbb478c79a9c00229282, type: 2}
+--- !u!114 &-6896348285243267785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152954391541224196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc29b0117baeb54aa4898156a66950c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 2ab0102046f3ea740b44efd473256522, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9152954391541224196}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
